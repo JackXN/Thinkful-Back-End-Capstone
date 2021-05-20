@@ -42,7 +42,7 @@ res.json({ data: data[0]})
 }
 
 
-const destory = async (req,res,next) => {
+const destroy = async (req,res,next) => {
 const {reviewId} = req.params;
 await service.delete(reviewId)
 

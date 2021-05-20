@@ -18,7 +18,7 @@ next({
 }
 
 
-const readMovieReviews = (req,res,next) => {
+const readMovieReviews = async (req,res,next) => {
     const {movieId} = req.params;
     const data = await service.readMovieReviews(moveId)
 res}
